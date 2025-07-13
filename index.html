@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Preethu</title>
+
+    <!--Links-->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="icon" type="image.png" href="assets/favi.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<style>
+    @media screen and (max-width: 615px) {
+        
+    }
+</style>
+<body>
+    <div class="nav-container">
+        <div class="nav-bar">
+            <div class="logo-container">
+                <a href="index.html" style="height: 8rem; width: 8rem; text-decoration: none; display: block;" >
+                    <img class="main-logo" src="assets/favi.png" >
+                </a>
+            </div>
+            <div class="nav">
+                <div class="nav-element">
+                    Home
+                </div>
+                <div class="nav-element">
+                    About
+                </div>
+                <div class="nav-element">
+                    Projects
+                </div>
+                <div class="nav-element">
+                    Contact
+                </div>
+                <div class="mode" onclick="themeChange()">
+                    <img id="light-mode" class="mode-icon visible" src="assets/modes/sun.png">
+                    <img id="dark-mode" class="mode-icon" src="assets/modes/moon.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/script.js"></script>
+</html>
