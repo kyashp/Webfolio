@@ -22,8 +22,9 @@
     box-shadow: 6px 6px 20px var(--shadow);
     padding-left: 1rem;
     padding-right: 1rem;
-    background-color: rgba(255,255,255,0.15);
+    background-color:var(--tint);
     flex-wrap: wrap;
+    align-items: center;
 }
 .logo-container{
     width: 8rem;
@@ -57,4 +58,32 @@
 .nav-element:hover{
     color: var(--secondary);
     font-size: 3rem;
+}
+.hamburger{
+    display:none;
+    position:absolute;
+    left: 90%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+    margin-right:3rem;
+    transition: all 0.3s ease;
+}
+.hamburger span{
+    height: 0.3rem;
+    width: 2rem;
+    background-color: var(--font-color);
+}
+
+.hamburger.active span:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active span:nth-child(2){
+    opacity:0;
+}
+.hamburger.active span:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
 }

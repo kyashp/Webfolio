@@ -1,10 +1,10 @@
 :root {
     /* Colors */
-    --bg:rgb(255, 255, 255);
-    --primary: rgb(145, 200, 228);
-    --secondary: rgb(40, 146, 216);
+    --bg:rgb(233, 255, 247);
+    --primary: rgb(158, 197, 255);
+    --secondary: rgb(80, 88, 244);
     --shadow: rgba(0,0,0,0.5);
-    
+    --tint:rgba(0, 115, 255, 0.15);
     /* Fonts/Sizes */
     --primary-font: Nunito;
     --secondary-font: Bitcount Grid Double;
@@ -19,7 +19,8 @@
     --bg: rgb(8, 33, 59);
     --primary:rgb(255, 206, 169);
     --secondary:rgb(255, 200, 100);
-
+    --shadow: rgba(255,255,255,0.5);
+    --tint: rgba(255,255,255,0.19) ;
     /* Fonts/Sizes */
     --primary-font: Nunito;
     --secondary-font: Bitcount Grid Double;
@@ -41,18 +42,23 @@ body{
     width: 4rem;
     cursor: pointer;
     position: relative;
+    
 }
 .mode-icon{
-    max-width: 100%; 
+    max-width: 4rem; 
     height:auto; 
     position:absolute; 
     top:25%; 
     left:0px; 
     right:0px;
-    visibility: hidden;
+    display: none;
+    transition: transform 0.3s ease;
+}
+.mode-icon:hover{
+    transform: scale(1.5);
 }
 .mode-icon.visible{
-    visibility: visible;
+    display: inline-block;
 }
 .mode-icon.visible.appear{
     animation: appear 0.8s ease;

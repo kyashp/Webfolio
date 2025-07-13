@@ -21,3 +21,24 @@ function themeChange(){
         localStorage.removeItem('theme');
     }
 }
+
+document.getElementById('main-logo').addEventListener('click',(e)=>{
+    e.preventDefault();
+    const curr= localStorage.getItem('theme');
+    if(curr){
+        document.documentElement.setAttribute('theme',curr);
+        window.scrollTo({top:0, behavior:"smooth"});
+    }
+    else{
+        window.scrollTo({top:0, behavior:"smooth"});
+    }
+});
+
+function toggleMenu(){
+    const burg= document.querySelector('.hamburger');
+    const navigation= document.querySelector('.nav');
+
+    burg.classList.toggle('active');
+    navigation.classList.toggle('active');
+}
+burg.addEventListener('click', toggleMenu());

@@ -15,14 +15,77 @@
 </head>
 <style>
     @media screen and (max-width: 615px) {
-        
+        .hamburger{
+            display:flex;
+        }
+        .nav{
+            display: none;
+            flex-direction: column;
+            align-content: space-around;
+            width: 100%;
+            align-items: center;
+            min-width:fit-content;
+        }
+        .nav-element,.mode{
+            width: 100%;
+            border-style: solid;
+            border-width: 1px;
+            backdrop-filter: blur(3px);
+            -webkit-backdrop-filter: blur(3px);
+            border-color: rgb(255, 254, 254,0.5);
+            background-color: var(--tint);
+            border-radius: 5rem;
+            
+        }
+        .nav.active{
+            display: flex;
+        }
+        .nav-element:nth-child(1){
+            animation: flow-down 0.2s ease-in-out;
+        }
+        .nav-element:nth-child(2){
+            animation: flow-down 0.2s ease-in-out;
+            animation-delay: 0.1s;
+        }
+        .nav-element:nth-child(3){
+            animation: flow-down 0.2s ease-in-out;
+            animation-delay: 0.2s;
+        }
+        .nav-element:nth-child(4){
+            animation: flow-down 0.2s ease-in-out;
+            animation-delay: 0.3s;
+        }
+        .mode{
+            animation: flow-down 0.2s ease-in-out;
+            animation-delay: 0.4s;
+        }
+        @keyframes flow-down{
+            from{
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to{
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+        .mode{
+            text-align: center;
+            vertical-align: center;
+            height:4rem;
+        }
+        .mode-icon{
+            position: inherit;
+            top:10%;
+            max-width: 3rem;
+        }
     }
 </style>
 <body>
     <div class="nav-container">
         <div class="nav-bar">
             <div class="logo-container">
-                <a href="index.html" style="height: 8rem; width: 8rem; text-decoration: none; display: block;" >
+                <a href="#" id="main-logo" style="height: 8rem; width: 8rem; text-decoration: none; display: block;" title="Yash">
                     <img class="main-logo" src="assets/favi.png" >
                 </a>
             </div>
@@ -44,8 +107,15 @@
                     <img id="dark-mode" class="mode-icon" src="assets/modes/moon.png">
                 </div>
             </div>
+            <div class="hamburger" onclick="toggleMenu();">
+                <span ></span>
+                <span ></span>
+                <span ></span>
+            </div>
         </div>
     </div>
 </body>
-<script src="js/script.js"></script>
+<script src="js/script.js">
+    
+</script>
 </html>
