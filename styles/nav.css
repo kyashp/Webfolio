@@ -2,13 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
     background-color: rgba(255,255,255,0);
     height: 12rem;
     width: 100%;
 }
 .nav-bar{
     display:flex;
+    position:fixed;
     justify-content: space-between;
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
@@ -25,14 +25,15 @@
     background-color:var(--tint);
     flex-wrap: wrap;
     align-items: center;
+    z-index: 2;
 }
 .logo-container{
     width: 8rem;
     min-width: 8rem;
 }
 .main-logo{
-    max-width: 100%; 
-    height:auto;
+    max-width: 100%;
+    height: auto;
     transition: transform 0.3s ease-out;
 }
 .main-logo:hover{

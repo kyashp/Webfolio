@@ -8,6 +8,7 @@
     <!--Links-->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/components.css">
     <link rel="icon" type="image.png" href="assets/favi.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -79,6 +80,17 @@
             top:10%;
             max-width: 3rem;
         }
+        #intro{
+            font-size: 2.5rem;
+        }
+        #socials{
+            justify-content: center;
+            gap:1rem;
+        }
+        .icons{
+            height:auto;
+            width:3rem;
+        }
     }
 </style>
 <body>
@@ -90,16 +102,16 @@
                 </a>
             </div>
             <div class="nav">
-                <div class="nav-element">
+                <div class="nav-element" onclick="window.scrollTo({top:0, behavior:'smooth'})">
                     Home
                 </div>
-                <div class="nav-element">
+                <div class="nav-element" onclick="document.querySelector('#about-scroll').scrollIntoView({behavior:'smooth'})">
                     About
                 </div>
-                <div class="nav-element">
+                <div class="nav-element" onclick="document.querySelector().scrollIntoView({behavior:'smooth'})">
                     Projects
                 </div>
-                <div class="nav-element">
+                <div class="nav-element" onclick="document.querySelector().scrollIntoView({behavior:'smooth'})">
                     Contact
                 </div>
                 <div class="mode" onclick="themeChange()">
@@ -114,6 +126,46 @@
             </div>
         </div>
     </div>
+    <div class="intro-container">
+        <div class="glass-container" style="justify-content: center; align-items: center; flex-direction: column;padding-bottom: 1rem;">
+            <div id="intro">
+                <div>
+                    <span id="salutation">Hi, </span>I am Yash!
+                </div> 
+            </div>
+            <div id="socials">
+                <a href="https://www.linkedin.com/in/kyashp003/" target="_blank" style="text-decoration: none;">
+                    <img class="icons" src="assets/socials/linkedin.png" alt="">
+                </a>
+                <a href="https://github.com/kyashp" target="_blank" style="text-decoration: none;">
+                    <img class="icons" src="assets/socials/github.png" alt="">
+                </a>
+                <a href="assets/Yash_CV.pdf" download="Yash_CV.pdf" style="text-decoration: none;">
+                    <img class="icons" src="assets/socials/cv.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="about-scroll"></div>
+    <div class="about-container">
+        <div class="glass-container" style="justify-content: center; align-items: center; flex-direction: column;padding-bottom: 1rem;">
+            <div class="section-title">
+                About
+            </div>
+            <div class="glass-container skills" style="justify-content: center; align-items: center; flex-direction: column;padding-bottom: 1rem;">
+                <div class="subsection-title">
+                    Skills
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="projects-container">
+
+    </div>
+    <div class="contact-container">
+
+    </div>
+    <footer>©2025 Yash. All Rights Reserved.</footer>
 </body>
 <script src="js/script.js">
     
