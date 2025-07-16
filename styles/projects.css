@@ -1,0 +1,61 @@
+.projects-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,0);
+    width: 100vw;
+    z-index:2;
+    height: fit-content;
+    margin-top: 11rem;
+}
+.project-collections{
+    display: flex;
+    flex-direction: rows;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 95%;
+    width: 95%;
+}
+.project-element{
+    border-radius: 4rem;
+    display:flex;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(255, 254, 254,0.5);
+    box-shadow: 6px 6px 20px var(--shadow);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color:var(--tint);
+    max-width: 125rem;
+
+    flex-direction: column;
+    height: 40rem;
+    width: 32rem;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+.github-redir{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 2rem;
+    transition: all 0.3s ease;
+}
+.github-redir:hover{
+    filter: invert(100%);
+}
+.project-name, .project-description, .project-tech, .project-pic{
+    border-style: solid;
+    height: 5rem;
+    width: 100%;
+}
+.project-pic{
+
+}

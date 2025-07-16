@@ -2,7 +2,7 @@
     /* Colors */
     --bg:rgb(233, 255, 247);
     --primary: #7bd7fc;
-    --secondary: rgb(108, 110, 212);
+    --secondary: rgb(97, 100, 255);
     --shadow: rgba(0,0,0,0.5);
     --tint:rgba(0, 115, 255, 0.15);
     --darker-tint:rgba(198, 238, 255,0.8);
@@ -28,7 +28,7 @@
     --primary-font: Nunito;
     --secondary-font: Bitcount Grid Double;
     --font-color:white;
-    --subfont-color: lightgray;
+    --subfont-color: #A3BFFA;
     font-size: 10px;
 
     .icons, .mode-icon, .main-logo{
