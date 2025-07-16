@@ -47,18 +47,18 @@ burg.addEventListener('click', toggleMenu());
 const translations=[
   { text: "Hi, ", language: "English", dir: "ltr" },
   { text: "வணக்கம், ", language: "Tamil", dir: "ltr" },
+  { text: "你好, ", language: "Chinese (Simplified)", dir: "ltr" },
+  { text: "مرحبًا، ", language: "Arabic", dir: "rtl" },
+  { text: "Hai, ", language: "Malay", dir: "ltr" },
   { text: "Hola, ", language: "Spanish", dir: "ltr" },
   { text: "Salut, ", language: "French", dir: "ltr" },
   { text: "Hallo, ", language: "German", dir: "ltr" },
   { text: "Ciao, ", language: "Italian", dir: "ltr" },
   { text: "こんにちは, ", language: "Japanese", dir: "ltr" },
   { text: "안녕하세요, ", language: "Korean", dir: "ltr" },
-  { text: "你好, ", language: "Chinese (Simplified)", dir: "ltr" },
   { text: "Привет, ", language: "Russian", dir: "ltr" },
-  { text: "مرحبًا، ", language: "Arabic", dir: "rtl" },
   { text: "नमस्ते, ", language: "Hindi", dir: "ltr" },
-  { text: "Selam, ", language: "Turkish", dir: "ltr" },
-  { text: "Hai, ", language: "Malay", dir: "ltr" }
+  { text: "Selam, ", language: "Turkish", dir: "ltr" } 
 ]
 
 const container=document.querySelector('#salutation');

@@ -8,6 +8,8 @@
     <!--Links-->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/intro.css">
+    <link rel="stylesheet" href="styles/about.css">
     <link rel="stylesheet" href="styles/components.css">
     <link rel="icon" type="image.png" href="assets/favi.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +18,11 @@
 </head>
 <style>
     @media screen and (max-width: 615px) {
+        html, body {
+            height: auto;
+            min-height: 100%;
+            overflow-x: hidden;
+        }
         .hamburger{
             display:flex;
         }
@@ -26,15 +33,16 @@
             width: 100%;
             align-items: center;
             min-width:fit-content;
+            
         }
         .nav-element,.mode{
             width: 100%;
             border-style: solid;
             border-width: 1px;
-            backdrop-filter: blur(3px);
-            -webkit-backdrop-filter: blur(3px);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             border-color: rgb(255, 254, 254,0.5);
-            background-color: var(--tint);
+            background-color: var(--darker-tint);
             border-radius: 5rem;
             
         }
@@ -91,83 +99,201 @@
             height:auto;
             width:3rem;
         }
+        .big-con{
+            flex-wrap: wrap;
+        }
+        .section{
+            height: auto;
+        }
     }
 </style>
 <body>
-    <div class="nav-container">
-        <div class="nav-bar">
-            <div class="logo-container">
-                <a href="#" id="main-logo" style="height: 8rem; width: 8rem; text-decoration: none; display: block;" title="Yash">
-                    <img class="main-logo" src="assets/favi.png" >
-                </a>
-            </div>
-            <div class="nav">
-                <div class="nav-element" onclick="window.scrollTo({top:0, behavior:'smooth'})">
-                    Home
+    <main>
+        <div class="nav-container">
+            <div class="nav-bar">
+                <div class="logo-container">
+                    <a href="#" id="main-logo" style="height: 8rem; width: 8rem; text-decoration: none; display: block;" title="Yash">
+                        <img class="main-logo" src="assets/favi.png" >
+                    </a>
                 </div>
-                <div class="nav-element" onclick="document.querySelector('#about-scroll').scrollIntoView({behavior:'smooth'})">
-                    About
+                <div class="nav">
+                    <div class="nav-element" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+                        Home
+                    </div>
+                    <div class="nav-element" onclick="document.querySelector('#about-scroll').scrollIntoView({behavior:'smooth'})">
+                        About
+                    </div>
+                    <div class="nav-element" onclick="document.querySelector().scrollIntoView({behavior:'smooth'})">
+                        Projects
+                    </div>
+                    <div class="nav-element" onclick="document.querySelector().scrollIntoView({behavior:'smooth'})">
+                        Contact
+                    </div>
+                    <div class="mode" onclick="themeChange()">
+                        <img id="light-mode" class="mode-icon visible" src="assets/modes/sun.png">
+                        <img id="dark-mode" class="mode-icon" src="assets/modes/moon.png">
+                    </div>
                 </div>
-                <div class="nav-element" onclick="document.querySelector().scrollIntoView({behavior:'smooth'})">
-                    Projects
-                </div>
-                <div class="nav-element" onclick="document.querySelector().scrollIntoView({behavior:'smooth'})">
-                    Contact
-                </div>
-                <div class="mode" onclick="themeChange()">
-                    <img id="light-mode" class="mode-icon visible" src="assets/modes/sun.png">
-                    <img id="dark-mode" class="mode-icon" src="assets/modes/moon.png">
-                </div>
-            </div>
-            <div class="hamburger" onclick="toggleMenu();">
-                <span ></span>
-                <span ></span>
-                <span ></span>
-            </div>
-        </div>
-    </div>
-    <div class="intro-container">
-        <div class="glass-container" style="justify-content: center; align-items: center; flex-direction: column;padding-bottom: 1rem;">
-            <div id="intro">
-                <div>
-                    <span id="salutation">Hi, </span>I am Yash!
-                </div> 
-            </div>
-            <div id="socials">
-                <a href="https://www.linkedin.com/in/kyashp003/" target="_blank" style="text-decoration: none;">
-                    <img class="icons" src="assets/socials/linkedin.png" alt="">
-                </a>
-                <a href="https://github.com/kyashp" target="_blank" style="text-decoration: none;">
-                    <img class="icons" src="assets/socials/github.png" alt="">
-                </a>
-                <a href="assets/Yash_CV.pdf" download="Yash_CV.pdf" style="text-decoration: none;">
-                    <img class="icons" src="assets/socials/cv.png" alt="">
-                </a>
-            </div>
-        </div>
-    </div>
-    <div id="about-scroll"></div>
-    <div class="about-container">
-        <div class="glass-container" style="justify-content: center; align-items: center; flex-direction: column;padding-bottom: 1rem;">
-            <div class="section-title">
-                About
-            </div>
-            <div class="glass-container skills" style="justify-content: center; align-items: center; flex-direction: column;padding-bottom: 1rem;">
-                <div class="subsection-title">
-                    Skills
+                <div class="hamburger" onclick="toggleMenu();">
+                    <span ></span>
+                    <span ></span>
+                    <span ></span>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="projects-container">
+        <div class="intro-container">
+            <div class="glass-container" style="justify-content: center; align-items: center; flex-direction: column;padding-bottom: 1rem; border-radius: 5rem;">
+                <div id="intro">
+                    <div>
+                        <span id="salutation">Hi, </span>I am Yash!
+                    </div> 
+                </div>
+                <div id="socials">
+                    <a href="https://www.linkedin.com/in/kyashp003/" target="_blank" style="text-decoration: none;">
+                        <img class="icons" src="assets/socials/linkedin.png" alt="">
+                    </a>
+                    <a href="https://github.com/kyashp" target="_blank" style="text-decoration: none;">
+                        <img class="icons" src="assets/socials/github.png" alt="">
+                    </a>
+                    <a href="assets/Yash_CV.pdf" download="Yash_CV.pdf" style="text-decoration: none;">
+                        <img class="icons" src="assets/socials/cv.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="about-scroll"></div>
+        <div class="about-container">
+            <div class="title">About</div>
+            <div class="big-con">
+                <div class="section">
+                    <div class="glass-container" style="flex-direction:column; align-items: center; width: 94%; border-radius: 4rem; padding-bottom: 1rem; margin-bottom: 1rem; flex: 1 1 49%;">
+                        <div class="section-title">
+                            Skills
+                        </div>
+                        <div class="subsection-title" style="text-align: left; margin-bottom: 1rem;">
+                            Programming Languages
+                        </div>
+                        <div class="skill-collections">
+                            <div class="skill-element">
+                                <img class="skill-icon" src="assets/skillsets/c.png">C
+                            </div>
+                            <div class="skill-element">
+                                <img class="skill-icon" src="assets/skillsets/c++.png">C++
+                            </div>
+                            <div class="skill-element">
+                                <img class="skill-icon" src="assets/skillsets/java.png">Java
+                            </div>
+                            <div class="skill-element">
+                                <img class="skill-icon" src="assets/skillsets/python.png">Python
+                            </div>
+                            <div class="skill-element">
+                                <img class="skill-icon" src="assets/skillsets/javascript.png">Javascript
+                            </div>
+                        </div>
+                        <div class="subsection-title" style="text-align: left; margin-bottom: 1rem; margin-top: 1rem;">
+                            Tools / Technologies
+                        </div>
+                        <div class="skill-collections">
+                            <div class="skill-element">
+                                <img class="skill-icon" src="assets/skillsets/html.png">HTML
+                            </div>
+                            <div class="skill-element">
+                                <img class="skill-icon" src="assets/skillsets/css.png">CSS
+                            </div>
+                            <div class="skill-element">
+                                <img class="skill-icon" src="assets/skillsets/sql.png">SQL
+                            </div>
+                            <div class="skill-element">
+                                <img class="skill-icon" src="assets/skillsets/git.png">Git
+                            </div>
+                            <div class="skill-element">
+                                <img class="skill-icon" src="assets/skillsets/github.png">Github
+                            </div>
+                        </div>
+                        <div class="subsection-title" style="text-align: left; margin-bottom: 1rem; margin-top: 1rem;">
+                            Soft Skills
+                        </div>
+                        <div class="skill-collections">
+                            <div class="skill-element">
+                                Communication
+                            </div>
+                            <div class="skill-element">
+                                Teamwork
+                            </div>
+                            <div class="skill-element">
+                                Problem Solving
+                            </div>
+                            <div class="skill-element">
+                                Conflict Resolution
+                            </div>
+                            <div class="skill-element">
+                                Adaptability
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass-container" style="flex-direction: column;align-items: center; justify-content: center; flex:1 1 49%; width: 94%;  border-radius: 4rem;">
+                        <div class="section-title">
+                            Education
+                        </div>
+                        <div style="display:flex; align-items: center; justify-content: center; flex-direction: column;">
+                            <div class="edu-text" style="text-align: center;">
+                            Bachelor of Engineering (Computer Engineering)
+                            </div>
+                            <div class="edu-text" style="text-align: center; color: var(--subfont-color);margin-bottom:2rem;">
+                                Nanyang Technological University (NTU), Singapore
+                            </div>
+                        </div>
+                        <button class="cert-button">View Certifications</button>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="glass-container exp" style="align-items: center;flex: 1 1 100%; width: 94%; border-radius: 4rem; flex-direction: column;">
+                        <div class="section-title">
+                            Experience
+                        </div>
+                        <div class="work">
+                            <div class="work-wrapper">
+                                <div class="circle" style="width: 2rem; height: 2rem; border-style: solid; border-radius: 1.5rem; background-color: gold; z-index: 3;"></div>
+                                <div class="work-info">
+                                    <div class="work-title"></div>
+                                    <div class="period"></div>
+                                    <div class="work-description"></div>
+                                    <div class="used-skills"></div>
+                                </div>
+                                
+                            </div>
+                            <div class="work-wrapper">
+                                <div class="circle" style="width: 2rem; height: 2rem; border-style: solid; border-radius: 1.5rem; background-color: gold; z-index: 3;"></div>
+                                <div class="work-info">
+                                    <div class="work-title"></div>
+                                    <div class="period"></div>
+                                    <div class="work-description"></div>
+                                    <div class="used-skills"></div>
+                                </div>
+                            </div>
+                            <div class="work-wrapper">
+                                <div class="circle" style="width: 2rem; height: 2rem; border-style: solid; border-radius: 1.5rem; background-color: gold; z-index: 3;"></div>
+                                <div class="work-info">
+                                    <div class="work-title"></div>
+                                    <div class="period"></div>
+                                    <div class="work-description"></div>
+                                    <div class="used-skills"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="projects-container">
 
-    </div>
-    <div class="contact-container">
+        </div>
+        <div class="contact-container">
 
-    </div>
+        </div>
+    </main>
     <footer>©2025 Yash. All Rights Reserved.</footer>
 </body>
 <script src="js/script.js">
-    
 </script>
 </html>

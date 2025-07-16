@@ -4,7 +4,7 @@
     align-items: center;
     background-color: rgba(255,255,255,0);
     height: 12rem;
-    width: 100%;
+    width: 100vw;
 }
 .nav-bar{
     display:flex;
@@ -25,7 +25,7 @@
     background-color:var(--tint);
     flex-wrap: wrap;
     align-items: center;
-    z-index: 2;
+    z-index: 999;
 }
 .logo-container{
     width: 8rem;

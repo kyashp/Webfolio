@@ -2,106 +2,13 @@
     display:flex;
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
-    width: 95%;
-    max-width: 125rem;
     border-style: solid;
     border-width: 1px;
     border-color: rgb(255, 254, 254,0.5);
-    border-radius: 5rem;
     box-shadow: 6px 6px 20px var(--shadow);
     padding-left: 1rem;
     padding-right: 1rem;
     background-color:var(--tint);
-    
-}
-.intro-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255,255,255,0);
-    width: 100%;
-    margin-top: 50vh;
-    z-index:-1;
-}
-#intro{
-    max-width: fit-content;
-    white-space: nowrap;
-    overflow: hidden;
-    font-family: var(--primary-font);
-    font-size: 8rem;
-    font-weight: 950;
-    
-    border-right-width: 0.2rem;
-    padding-right:0.5rem;
-    padding-left: 0.5rem;
-    
-}
-#salutation{
-    border-right-style: solid;
-    border-right-color: var(--font-color);
-    animation: blink 0.8s step-end infinite;
-    background: linear-gradient(90deg, #a87a31, #43819b);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.typing{
-    animation:width-modifier 2s steps(20, end) forwards;
-}
-.rtl{
-    direction: rtl;
-}
-@keyframes width-modifier {
-    from{
-        width:0%;
-    }
-    to{
-        width:100%;
-    }
-}
-@keyframes blink {
-    0%{
-        border-color: transparent;
-    }
-    50%{
-        border-color: var(--font-color);
-    }
-    100%{
-        border-color: transparent;
-    }
-}
-#socials{
-    display: flex;
-    width: 20%;
-    justify-content: space-around;
-}
-.icons{
-    height: 5rem;
-    width: 5rem;
-    transition: transform 0.4s ease;
-}
-.icons:hover{
-    transform: scale(1.5);
-}
-
-.about-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255,255,255,0);
-    width: 100%;
-    z-index:-1;
-    margin-top: 14rem;
-}
-.section-title{
-    font-family: var(--primary-font);
-    font-size: 8rem;
-    font-weight: 900;
-}
-.subsection-title{
-    font-family: var(--primary-font);
-    font-size: 7rem;
-    font-weight: 850;
-}
-.skills{
-    width:80%;
+    width: 95%;
+    max-width: 125rem;
 }
