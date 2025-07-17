@@ -13,7 +13,8 @@
     display: flex;
     flex-direction: rows;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 2rem;
     align-items: center;
     max-width: 95%;
     width: 95%;
@@ -33,9 +34,9 @@
     max-width: 125rem;
 
     flex-direction: column;
-    height: 40rem;
+    height: 60rem;
     width: 32rem;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     position:relative;
 }
@@ -51,11 +52,49 @@
 .github-redir:hover{
     filter: invert(100%);
 }
-.project-name, .project-description, .project-tech, .project-pic{
-    border-style: solid;
-    height: 5rem;
+.project-pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     width: 100%;
 }
-.project-pic{
-
+.pic{
+    object-fit: cover;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 5rem;
+    border-style: solid;
+    border-color: gold;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.pic:hover{
+    transform:scale(1.01);
+    box-shadow: 2px 2px 20px var(--shadow);
+}
+.project-name{
+    font-family: var(--primary-font);
+    font-size: 2.5rem;
+    font-weight: 800;
+    align-items: center;
+    color: var(--secondary);
+    width: 100%;
+}
+.project-description{
+    font-family: Nunito;
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.project-tech{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
 }

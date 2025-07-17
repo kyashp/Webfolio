@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/intro.css">
     <link rel="stylesheet" href="styles/about.css">
     <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/contact.css">
     <link rel="stylesheet" href="styles/components.css">
     <link rel="icon" type="image.png" href="assets/favi.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -127,7 +128,7 @@
                     <div class="nav-element" onclick="document.querySelector('#projects-scroll').scrollIntoView({behavior:'smooth'})">
                         Projects
                     </div>
-                    <div class="nav-element" onclick="document.querySelector().scrollIntoView({behavior:'smooth'})">
+                    <div class="nav-element" onclick="document.querySelector('#contact-scroll').scrollIntoView({behavior:'smooth'})">
                         Contact
                     </div>
                     <div class="mode" onclick="themeChange()">
@@ -143,12 +144,13 @@
             </div>
         </div>
         <div class="intro-container">
-            <div class="glass-container" style="justify-content: center; align-items: center; flex-direction: column;padding-bottom: 1rem; border-radius: 5rem;">
+            <div class="glass-container" style="justify-content: center; align-items: center; flex-direction: column;padding-bottom: 1rem; border-radius: 4rem;">
                 <div id="intro">
                     <div>
                         <span id="salutation">Hi, </span>I am Yash!
                     </div> 
                 </div>
+                <div id="sub-intro">Aspiring Computer Engineer</div>
                 <div id="socials">
                     <a href="https://www.linkedin.com/in/kyashp003/" target="_blank" style="text-decoration: none;">
                         <img class="icons" src="assets/socials/linkedin.png" alt="">
@@ -307,30 +309,59 @@
             <div class="title">Projects</div>
             <div class="project-collections">
                 <div class="project-element">
-                    
-                </div>
-                <div class="project-element">
-                    <div class="project-pic"></div>
-                    <div class="project-name">Team Allocation Simulator</div>
-                    <div class="project-description"></div>
-                    <div class="project-tech">
-                            
+                    <div class="project-pic">
+                        <img class="pic" src="assets/projects/tas.png" alt="">
                     </div>
-                    <a href="" style="text-decoration: none; ">
+                    <div class="project-name">Team Allocation Simulator</div>
+                    <div class="project-description">
+                         Managed and processed 6,000 student records using only Python's built-in list and dictionaries without any external libraries, implemented a custom algorithm to form balanced teams while handling edge cases. Evaluated team diversity and showcased results with clear visualizations using matplotlib.
+                    </div>
+                    <div class="project-tech">
+                            <div class="mini-badges">Python</div>
+                            <div class="mini-badges">MatplotLib</div>
+                            <div class="mini-badges">Data Analysis</div>
+                    </div>
+                    <a href="https://github.com/kyashp/Team_Allocation_Simulator/blob/main/miniProjMain.ipynb" target="_blank" style="text-decoration: none; ">
                             <img class="github-redir" src="assets/skillsets/github.png" alt="">
                     </a>
                 </div>
                 <div class="project-element">
-                    
+                    <div class="project-pic">
+                        <img class="pic" src="assets/projects/Snippets.png" alt="">
+                    </div>
+                    <div class="project-name">Snippets: Book Repository</div>
+                    <div class="project-description">
+                         Dynamic application developed for readers to organize and manage key insights from their books. Users can sign up, log in, and create, update, or delete book summaries, with all data securely stored and retrieved from a local SQL database.
+                    </div>
+                    <div class="project-tech">
+                            <div class="mini-badges">Java</div>
+                            <div class="mini-badges">SQL</div>
+                    </div>
+                    <a href="https://github.com/kyashp/Snippets" target="_blank" style="text-decoration: none; ">
+                            <img class="github-redir" src="assets/skillsets/github.png" alt="">
+                    </a>
                 </div>
             </div>
-            
         </div>
+        <div id="contact-scroll"></div>
         <div class="contact-container">
-            
+            <div class="glass-container" style="justify-content: center; align-items: center; flex-direction: column;padding-bottom: 1rem; border-top-left-radius: 4rem; border-top-right-radius: 4rem; width: 100%;">
+                <div class="title">Let's Connect!</div>
+                <div class="connect-socials">
+                    <a href="https://www.linkedin.com/in/kyashp003/" target="_blank" style="text-decoration: none;">
+                        <img class="icons" src="assets/socials/linkedin.png" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/k_yash.p/" target="_blank" style="text-decoration: none;">
+                        <img class="ins" src="assets/socials/insta.png" alt="">
+                    </a>
+                    <a href="mailto:kyashp03@gmail.com" target="_blank" style="text-decoration: none;">
+                        <img class="icons" src="assets/socials/email.png" alt="">
+                    </a>
+                </div>
+                <footer>©2025 Yash. All Rights Reserved.</footer>
+            </div>
         </div>
     </main>
-    <footer>©2025 Yash. All Rights Reserved.</footer>
 </body>
 <script src="js/script.js">
 </script>

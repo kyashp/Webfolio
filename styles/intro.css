@@ -54,6 +54,12 @@
         border-color: transparent;
     }
 }
+#sub-intro{
+    font-family: var(--secondary-font); 
+    font-size: 2.3rem; 
+    font-weight: 350;
+    margin-bottom: 0.8rem;
+}
 #socials{
     display: flex;
     width: 20%;
