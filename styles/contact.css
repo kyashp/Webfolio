@@ -15,12 +15,14 @@
     width: 50%;
     justify-content: center;
     align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 .ins{
     height: 5rem;
     width: 5rem;
-    transition: transform 0.4s ease;
+    transition: transform 0.3s ease;
 }
 .ins:hover{
-    transform: scale(1.5);
+    transform: scale(1.2);
 }

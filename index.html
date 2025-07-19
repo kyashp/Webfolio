@@ -93,19 +93,38 @@
         #intro{
             font-size: 2.5rem;
         }
+        #sub-intro{
+            font-size: 1.8rem;
+        }
         #socials{
             justify-content: center;
             gap:1rem;
         }
         .icons{
             height:auto;
-            width:3rem;
+            width:4rem;
+        }
+        .title{
+            font-size: 6rem;
+        }
+        .section-title{
+            font-size: 4rem;
+        }
+        .subsection-title{
+            font-size: 2rem;
         }
         .big-con{
             flex-wrap: wrap;
         }
         .section{
             height: auto;
+        }
+        .ins{
+            width: 4rem;
+            height: auto;
+        }
+        .contact-container{
+            line-height: 1;
         }
     }
 </style>
@@ -143,6 +162,9 @@
                 </div>
             </div>
         </div>
+        <div id="effect-container">
+
+        </div>
         <div class="intro-container">
             <div class="glass-container" style="justify-content: center; align-items: center; flex-direction: column;padding-bottom: 1rem; border-radius: 4rem;">
                 <div id="intro">
@@ -153,13 +175,13 @@
                 <div id="sub-intro">Aspiring Computer Engineer</div>
                 <div id="socials">
                     <a href="https://www.linkedin.com/in/kyashp003/" target="_blank" style="text-decoration: none;">
-                        <img class="icons" src="assets/socials/linkedin.png" alt="">
+                        <img title="LinkedIn" class="icons" src="assets/socials/linkedin.png" alt="">
                     </a>
                     <a href="https://github.com/kyashp" target="_blank" style="text-decoration: none;">
-                        <img class="icons" src="assets/socials/github.png" alt="">
+                        <img title="Github" class="icons" src="assets/socials/github.png" alt="">
                     </a>
                     <a href="assets/Yash_CV.pdf" download="Yash_CV.pdf" style="text-decoration: none;">
-                        <img class="icons" src="assets/socials/cv.png" alt="">
+                        <img title="My CV" class="icons" src="assets/socials/cv.png" alt="">
                     </a>
                 </div>
             </div>
@@ -349,13 +371,13 @@
                 <div class="title">Let's Connect!</div>
                 <div class="connect-socials">
                     <a href="https://www.linkedin.com/in/kyashp003/" target="_blank" style="text-decoration: none;">
-                        <img class="icons" src="assets/socials/linkedin.png" alt="">
+                        <img title="LinkedIn" class="icons" src="assets/socials/linkedin.png" alt="">
                     </a>
                     <a href="https://www.instagram.com/k_yash.p/" target="_blank" style="text-decoration: none;">
-                        <img class="ins" src="assets/socials/insta.png" alt="">
+                        <img title="Instagram" class="ins" src="assets/socials/insta.png" alt="">
                     </a>
                     <a href="mailto:kyashp03@gmail.com" target="_blank" style="text-decoration: none;">
-                        <img class="icons" src="assets/socials/email.png" alt="">
+                        <img title="Email" class="icons" src="assets/socials/email.png" alt="">
                     </a>
                 </div>
                 <footer>©2025 Yash. All Rights Reserved.</footer>
@@ -363,6 +385,5 @@
         </div>
     </main>
 </body>
-<script src="js/script.js">
-</script>
+<script src="js/script.js"></script>
 </html>
