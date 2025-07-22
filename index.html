@@ -119,6 +119,9 @@
         .section{
             height: auto;
         }
+        .edu-text{
+            font-size:1.6rem;
+        }
         .ins{
             width: 4rem;
             height: auto;
@@ -150,7 +153,7 @@
                     <div class="nav-element" onclick="document.querySelector('#contact-scroll').scrollIntoView({behavior:'smooth'})">
                         Contact
                     </div>
-                    <div class="mode" onclick="themeChange()">
+                    <div id="mode" class="mode" onclick="themeChange()">
                         <img id="light-mode" class="mode-icon visible" src="assets/modes/sun.png">
                         <img id="dark-mode" class="mode-icon" src="assets/modes/moon.png">
                     </div>
@@ -386,4 +389,13 @@
     </main>
 </body>
 <script src="js/script.js"></script>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.178.0/build/three.module.js",
+    "jsm/": "https://cdn.jsdelivr.net/npm/three@0.178.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module" src="js/visual.js"></script>
 </html>

@@ -13,10 +13,11 @@
     max-width: 125rem;
 }
 #effect-container{
-    border-style: solid;
     width: 100vw;
-    height: 32.5rem;
+    height: 48vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: black;
 }
+
